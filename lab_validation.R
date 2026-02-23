@@ -146,7 +146,7 @@ df_raters <- ccc_by_method_rater_long(df_all2)
 logit01 <- function(x, eps = 1e-6) qlogis(pmin(pmax(x, eps), 1 - eps))
 
 fit_emm_plot <- function(data, response_var, ylab,
-                         method_levels = c("aidedold", "aidednew", "unaided"),
+                         method_levels = c("unaided", "aidedold", "aidednew"),
                          eps = 1e-6,
                          ylim = c(0.7, 1.0),
                          do_dharma = FALSE) {
@@ -183,7 +183,7 @@ fit_emm_plot <- function(data, response_var, ylab,
     coord_cartesian(ylim = ylim) +
     theme_classic(base_size = 12) +
     theme(legend.position = "none") +
-    scale_color_viridis_d()
+    scale_color_viridis_d(begin = 0, end = 1)
 
   list(fit = fit, em_df = em_df, plot = p)
 }
@@ -304,7 +304,7 @@ print(panel_2x2)
 # ----------------------------
 # 8) (Optional) Save outputs
 # ----------------------------
-ggsave("panel_2x2.png", panel_2x2, width = 6, height = 5.5, dpi = 300)
+ggsave("figs/panel_2x2.png", panel_2x2, width = 6, height = 5.5, dpi = 300)
 # write.csv(df_raters, "df_raters_ccc.csv", row.names = FALSE)
 # write.csv(cp_hyb_tbl, "cp_hybrid_by_method.csv", row.names = FALSE)
 
