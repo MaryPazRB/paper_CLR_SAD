@@ -73,7 +73,7 @@ Most figures are saved within the `figs/` directory. Ensure this directory exist
 
 ## 📷 About the datasets.
 
-Datasets are disponibilized for usage in Kagglehub in the following link:
+Datasets are disponibilized for usage in Kaggle in the following link:
 
 https://www.kaggle.com/datasets/marypazrb/paper-clr-sad
 
