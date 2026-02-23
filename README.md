@@ -76,3 +76,13 @@ Most figures are saved within the `figs/` directory. Ensure this directory exist
 Datasets are disponibilized for usage in Kagglehub in the following link:
 
 https://www.kaggle.com/datasets/marypazrb/paper-clr-sad
+
+Annotated datasets for golden standard is available in roboflow universe:
+
+ - **40 Images used for Lab validation**
+
+https://universe.roboflow.com/clr-zky50/40_img_lab/dataset/1
+
+ - **100 Images used for field validation**
+
+https://universe.roboflow.com/clr-zky50/imgtest-fvn9j/dataset/1
